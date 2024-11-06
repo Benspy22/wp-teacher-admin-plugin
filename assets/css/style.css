@@ -1,0 +1,161 @@
+/* Variables CSS pour les couleurs */
+:root {
+    --primary-color: #007cba;
+    --secondary-color: #23282d;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+/* Styles pour les tableaux de données */
+.wp-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wp-list-table th {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 10px;
+    text-align: left;
+}
+
+.wp-list-table tr:nth-child(even) {
+    background-color: var(--light-color);
+}
+
+.wp-list-table tr:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.wp-list-table th.sortable:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+/* Styles pour les formulaires */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid var(--dark-color);
+    border-radius: 4px;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button-secondary {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button-primary:hover, .button-secondary:hover {
+    opacity: 0.8;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group .form-control {
+    width: calc(100% - 20px);
+}
+
+.message-success {
+    color: var(--success-color);
+    font-weight: bold;
+}
+
+.message-error {
+    color: var(--danger-color);
+    font-weight: bold;
+}
+
+/* Styles pour le calendrier */
+#calendar {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.fc-event {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+}
+
+.fc-event:hover {
+    background-color: var(--secondary-color);
+}
+
+.fc-toolbar {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 10px;
+}
+
+.fc-button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 5px 10px;
+    margin: 2px;
+}
+
+.fc-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.fc-popover {
+    background-color: var(--light-color);
+    border: 1px solid var(--dark-color);
+}
+
+/* Styles pour le suivi des compétences */
+.progress {
+    background-color: var(--light-color);
+    border-radius: 4px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    transition: width 0.6s ease;
+}
+
+.skill-status.non-acquis {
+    color: var(--danger-color);
+}
+
+.skill-status.en-cours {
+    color: var(--warning-color);
+}
+
+.skill-status.acquis {
+    color: var(--success-color);
+}
+
+#progress-chart {
+    max-width: 100%;
+    margin: 20px 0;
+}
